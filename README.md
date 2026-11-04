@@ -1,61 +1,294 @@
-## Southeast Asian CO₂ Emissions Analysis (1990–2024)
+CO₂ Emissions Analysis: Malaysia and Southeast Asia (1990–2024)
 
-## Project Overview
+Project Overview
 
-This project uses Python to analyse annual carbon dioxide (CO₂) emissions in Malaysia, Indonesia, Thailand, and Singapore from 1990 to 2024. It explores long-term emissions trends, annual changes, and the relationship between time and emissions.
+This project analyses annual carbon dioxide (CO₂) emissions in four Southeast Asian countries: Malaysia, Indonesia, Thailand, and Singapore, from 1990 to 2024.
 
-## Objectives
+Using Python, the project explores historical emissions trends, compares changes between 1990 and 2024, and applies statistical techniques to examine the relationship between time and annual CO₂ emissions.
 
-- Compare emissions across four Southeast Asian countries.
-- Calculate absolute and percentage changes between 1990 and 2024.
-- Analyse year-on-year emissions changes.
-- Compare average annual percentage changes.
-- Evaluate the correlation between year and annual emissions.
-- Visualise emissions patterns using Python.
+The objective is to identify differences in national emissions patterns and provide a data-driven overview of CO₂ emissions trends across the selected countries.
 
-## Tools and Technologies
+Research Objectives
 
-- Python
-- Pandas
-- Matplotlib
-- Google Colab
-- Jupyter Notebook
+Examine annual CO₂ emissions trends from 1990 to 2024.
 
-## Key Findings
+Compare average annual emissions among the four countries.
 
-- Indonesia recorded the highest total annual emissions in 2024, at approximately 812.22 million tonnes.
-- Malaysia recorded the largest percentage increase from 1990 to 2024, at approximately 434.78%.
-- Indonesia's emissions increased by approximately 424.04% over the same period.
-- Malaysia showed the strongest positive correlation between year and emissions (r = 0.992).
-- Singapore showed a weaker linear correlation (r = 0.223).
+Calculate year-on-year (YoY) percentage changes.
 
-These findings describe the analysed data and do not establish the causes of emissions changes.
+Compare emissions levels between 1990 and 2024.
 
-## Methods
+Evaluate the correlation between year and annual CO₂ emissions.
 
-1. Filter annual emissions data for 1990–2024.
-2. Calculate starting and ending emissions for each country.
-3. Calculate absolute and percentage changes.
-4. Calculate year-on-year percentage changes.
-5. Compare average annual percentage changes.
-6. Calculate Pearson correlation coefficients between year and annual emissions.
-7. Create charts to visualise the results.
+Apply linear regression to estimate long-term emissions trends.
 
-## Limitations
+Countries Included
 
-- Total emissions do not account for differences in population size.
-- Correlation does not imply causation.
-- Findings depend on the coverage and definitions of the source dataset.
-- This is a descriptive analysis, not a forecast.
+Malaysia
 
-## Repository Contents
+Indonesia
 
-- `malaysia_environmental_data_analysis.ipynb` — Python notebook containing the analysis and visualisations.
+Thailand
 
-## Data Source
-- Dataset: Annual CO₂ emissions per country.
-- Provider: Our World in Data.
-- Dataset page:  https://ourworldindata.org/grapher/annual-co2-emissions-per-country
+Singapore
+
+Dataset
+
+Source: Our World in Data – CO₂ Emissions
+
+Dataset: Annual CO₂ emissions per country
+
+Data coverage: 1750–2024 (analysis restricted to 1990–2024)
+
+Unit of measurement: Million tonnes of CO₂ (MtCO₂)
+
+The dataset is sourced from the Global Carbon Budget and reports territorial CO₂ emissions from fossil fuels and industry. Land-use change emissions are not included.
+
+Dataset link: https://ourworldindata.org/grapher/annual-co2-emissions-per-country
+
+Tools and Technologies
+
+Python – Data analysis and statistical computation
+
+Pandas – Data cleaning, manipulation, grouping, and analysis
+
+NumPy – Numerical computation and linear regression calculations
+
+Matplotlib – Data visualisation
+
+Jupyter Notebook – Interactive data analysis and documentation
+
+Methodology
+
+The analysis follows these steps:
+
+Data collection: Import the annual CO₂ emissions dataset from Our World in Data.
+
+Data inspection: Examine dataset structure, missing values, duplicate records, and descriptive statistics.
+
+Data filtering: Select Malaysia, Indonesia, Thailand, and Singapore for the 1990–2024 period.
+
+Data validation: Check annual observations and identify missing years for each country.
+
+Data transformation: Convert emissions from tonnes to million tonnes (MtCO₂).
+
+Trend analysis: Calculate year-on-year percentage changes and average annual emissions.
+
+Comparative analysis: Compare emissions in 1990 and 2024, including absolute and percentage changes.
+
+Correlation analysis: Calculate Pearson correlation coefficients between year and annual CO₂ emissions.
+
+Regression analysis: Apply simple linear regression to estimate emissions trends and calculate R² values.
+
+Data visualisation and export: Generate charts and export statistical results into CSV files.
+
+Key Findings
+
+1. Average Annual CO₂ Emissions (1990–2024)
+
+Country
+
+Average emissions (MtCO₂)
+
+Indonesia
+
+419.19
+
+Thailand
+
+212.99
+
+Malaysia
+
+179.23
+
+Singapore
+
+46.19
+
+Indonesia recorded the highest average annual CO₂ emissions, while Singapore recorded the lowest.
+
+2. Emissions Comparison (1990–2024)
+
+Country
+
+1990 (MtCO₂)
+
+2024 (MtCO₂)
+
+Percentage change
+
+Malaysia
+
+54.27
+
+290.22
+
++434.78%
+
+Indonesia
+
+154.99
+
+812.22
+
++424.04%
+
+Thailand
+
+86.56
+
+267.76
+
++209.32%
+
+Singapore
+
+43.54
+
+53.92
+
++23.85%
+
+Malaysia recorded the highest percentage increase, whereas Indonesia experienced the largest absolute increase in emissions.
+
+3. Average Year-on-Year Growth
+
+Country
+
+Average YoY change
+
+Malaysia
+
+5.33%
+
+Indonesia
+
+5.26%
+
+Thailand
+
+3.52%
+
+Singapore
+
+1.18%
+
+Malaysia had the highest average year-on-year percentage change over the study period.
+
+4. Pearson Correlation Analysis
+
+Country
+
+Pearson correlation (r)
+
+Malaysia
+
+0.9923
+
+Indonesia
+
+0.9769
+
+Thailand
+
+0.9529
+
+Singapore
+
+0.2227
+
+Malaysia, Indonesia, and Thailand demonstrated strong positive linear associations between year and annual CO₂ emissions. Singapore showed a considerably weaker positive association.
+
+5. Linear Regression Analysis
+
+Country
+
+Estimated annual change (MtCO₂/year)
+
+R²
+
+Indonesia
+
+17.2791
+
+0.9543
+
+Malaysia
+
+6.9571
+
+0.9847
+
+Thailand
+
+5.5849
+
+0.9079
+
+Singapore
+
+0.1152
+
+0.0496
+
+Indonesia had the highest estimated absolute annual increase based on the fitted linear regression model. Malaysia had the highest R², indicating the strongest linear fit among the four countries.
+
+Visualisations
+
+The project includes:
+
+Average annual CO₂ emissions comparison.
+
+Annual CO₂ emissions trends by country.
+
+Malaysia-specific emissions trend.
+
+Comparison of emissions in 1990 and 2024.
+
+Pearson correlation visualisation.
+
+Linear regression plots for all four countries.
+
+Statistical Methods
+
+Descriptive statistics
+
+Percentage change calculations
+
+Pearson correlation coefficient
+
+Simple linear regression
+
+Coefficient of determination (R²)
+
+Limitations
+
+The analysis focuses on total national emissions rather than per-capita emissions.
+
+The dataset excludes CO₂ emissions from land-use change.
+
+Correlation and regression identify statistical relationships but do not establish causation.
+
+Population growth, GDP, energy consumption, industrialisation, and renewable energy use were not incorporated as explanatory variables.
+
+Simple linear regression may not adequately capture nonlinear emissions patterns or structural changes over time.
+
+Future Improvements
+
+Potential extensions include:
+
+Comparing CO₂ emissions per capita.
+
+Investigating relationships between emissions and GDP.
+
+Examining population growth and energy consumption.
+
+Comparing renewable and non-renewable energy contributions.
+
+Applying multiple linear regression to investigate potential explanatory variables.
+
+Exploring forecasting techniques for future emissions trends.
 
 ## How to Run
 
