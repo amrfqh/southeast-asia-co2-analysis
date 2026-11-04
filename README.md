@@ -53,7 +53,7 @@ These findings describe the analysed data and do not establish the causes of emi
 - `malaysia_environmental_data_analysis.ipynb` — Python notebook containing the analysis and visualisations.
 
 ## Data Source
-
+https://ourworldindata.org/grapher/annual-co2-emissions-per-country?utm_source=chatgpt.com
 
 
 ## How to Run
