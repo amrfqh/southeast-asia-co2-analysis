@@ -23,20 +23,17 @@ The objective is to identify differences in national emissions patterns and prov
 - Indonesia
 - Thailand
 - Singapore
+- 
+### Data Source & Attribution
 
-## Dataset
-
-**Source:** Our World in Data – CO₂ Emissions
-
-**Dataset:** Annual CO₂ emissions per country
-
-**Data coverage:** 1750–2024 (analysis restricted to 1990–2024)
-
-**Unit of measurement:** Million tonnes of CO₂ (MtCO₂)
-
-The dataset is sourced from the Global Carbon Budget and reports territorial CO₂ emissions from fossil fuels and industry. Land-use change emissions are not included.
-
-Dataset link: https://ourworldindata.org/grapher/annual-co2-emissions-per-country
+- **Original dataset:** Annual CO₂ emissions per country
+- **Publisher:** Our World in Data (OWID)
+- **Original data source:** Global Carbon Budget
+- **Dataset URL:** https://ourworldindata.org/grapher/annual-co2-emissions-per-country
+- **Data coverage:** 1750–2024
+- **Analysis period:** 1990–2024
+- **Unit:** Million tonnes of CO₂ (MtCO₂)
+- **Emissions scope:** Territorial CO₂ emissions from fossil fuels and industry, excluding land-use change emissions.
 
 ## Tools and Technologies
 
