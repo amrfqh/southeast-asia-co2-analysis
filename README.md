@@ -23,7 +23,7 @@ The objective is to identify differences in national emissions patterns and prov
 - Indonesia
 - Thailand
 - Singapore
-- 
+  
 ### Data Source & Attribution
 
 - **Original dataset:** Annual CO₂ emissions per country
