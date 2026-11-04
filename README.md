@@ -55,7 +55,7 @@ These findings describe the analysed data and do not establish the causes of emi
 ## Data Source
 - Dataset: Annual CO₂ emissions per country.
 - Provider: Our World in Data.
-- Dataset page: https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=table&time=latest 
+- Dataset page:  https://ourworldindata.org/grapher/annual-co2-emissions-per-country
 
 ## How to Run
 
