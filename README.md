@@ -53,9 +53,9 @@ These findings describe the analysed data and do not establish the causes of emi
 - `malaysia_environmental_data_analysis.ipynb` — Python notebook containing the analysis and visualisations.
 
 ## Data Source
-Dataset: Annual CO₂ emissions per country.
-Provider: Our World in Data.
-
+- Dataset: Annual CO₂ emissions per country.
+- Provider: Our World in Data.
+- Dataset page: https://ourworldindata.org/grapher/annual-co2-emissions-per-country?tab=table&time=latest 
 
 ## How to Run
 
